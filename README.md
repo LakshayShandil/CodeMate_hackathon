@@ -1,62 +1,56 @@
-# 🖥️ CodeMate Hackathon – AI Command Terminal
+# 🚀 Python AI Command Terminal 🚀
 
-A fully-functional command terminal built in Python for the **CodeMate Hackathon**, replicating real system terminal behavior while introducing modern enhancements like AI-powered command translation, smart auto-completion, and persistent command history.
-
----
-
-## 🚀 Features
-
-### ✅ Mandatory Requirements
-
-- **Core Commands**: Supports `ls`, `cd`, `pwd`, `mkdir`, `rm`, `touch`, and `mv`
-- **System Monitoring**: `monitor` command displays real-time CPU and memory usage
-- **Robust Error Handling**: Clear feedback for invalid commands or arguments
-- **Responsive CLI**: Clean and interactive command-line interface
-
-### 🌟 Optional Enhancements
-
-| Feature | Description |
-|--------|-------------|
-| 🧠 **AI-Powered Queries** | Use `ai` to execute tasks via natural language (e.g., `ai create a new folder called project_files`) |
-| 🔍 **Smart Auto-Completion** | Press `Tab` to complete commands; contextual suggestions for `ai` queries |
-| 📜 **Command History** | Navigate with arrow keys; history persists across sessions |
-| 🔗 **Command Chaining** | Use `&&` to execute multiple commands (e.g., `pwd && ls`) |
-| 🔐 **Secure API Key Handling** | `.env` file securely manages Gemini API key |
+> A fully-functioning command terminal built in Python for the CodeMate Hackathon. This project replicates the behavior of a real system terminal while adding powerful, modern features like AI-powered command translation, advanced auto-completion, and command history.
 
 ---
 
-## ⚙️ Setup & Installation
+## ✨ Features
 
-### 1. Clone the Repository
+This terminal meets all mandatory requirements and implements several key optional enhancements to create a powerful and user-friendly experience.
 
-```bash
-git clone <your-repo-link>
-cd <your-repo-folder>
-```
-
-### 2. Install Dependencies
-
-Ensure Python 3 is installed, then run:
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Set Up API Key
-
-Create a `.env` file in the root directory and add your Gemini API key:
-
-```env
-GEMINI_API_KEY=your_api_key_here
-```
+| Mandatory Requirements Met | Optional Enhancements Implemented |
+| :------------------------- | :-------------------------------- |
+| ✅ Core System Commands    | 🤖 AI-Powered Queries             |
+| 🖥️ System Monitoring       | 🧠 Smart Auto-Completion          |
+| ⚠️ Robust Error Handling   | 📜 Persistent Command History     |
+| 🎨 Responsive CLI          | 🔗 Command Chaining (`&&`)        |
+|                            | 🔐 Secure API Key Handling        |
 
 ---
 
-## 📌 Notes
+## 🛠️ Setup and Installation
 
-- Use `Ctrl + Shift + M` to toggle tab key focus.
-- Alternatively, press `Esc` then `Tab` to move between interactive elements.
+Follow these steps to get the terminal running on your local machine.
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone <your-repo-link>
+    cd <your-repo-folder>
+    ```
+
+2.  **Install Dependencies:**
+    Make sure you have Python 3 installed. Then, run the following command to install the required libraries from the `requirements.txt` file.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Set Up Your API Key:**
+    - Create a file named `.env` in the root of the project directory.
+    - Add your Gemini API key to this file in the following format:
+      ```env
+      GEMINI_API_KEY="YOUR_API_KEY_HERE"
+      ```
+
+4.  **Run the Terminal:**
+    You're all set! Launch the terminal with this command:
+    ```bash
+    python terminal.py
+    ```
 
 ---
 
-Let me know if you'd like to add badges, visuals, or a usage demo GIF to make it even more engaging!
+## 📖 How to Use
+
+-   **Standard Commands:** Type any of the supported commands (e.g., `ls`, `cd ..`, `monitor`).
+-   **AI Commands:** Type `ai` followed by your request in plain English (e.g., `ai create a file named report.txt`).
+-   **Exit:** Type `exit` to close the terminal.
