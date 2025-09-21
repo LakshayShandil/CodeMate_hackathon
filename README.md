@@ -1,59 +1,66 @@
-Python AI Command Terminal
-This project is a fully-functioning command terminal built in Python, created for the CodeMate Hackathon. It replicates the behavior of a real system terminal while adding powerful, modern features like AI-powered command translation, advanced auto-completion, and command history.
+Absolutely! Here's a polished and visually structured version of your README file that enhances clarity, professionalism, and readability:
 
-Features
-Mandatory Requirements
-Core Commands: Full support for ls, cd, pwd, mkdir, rm, touch, and mv.
+---
 
-System Monitoring: monitor command to display real-time CPU and memory usage.
+# 🖥️ CodeMate Hackathon – AI Command Terminal
 
-Robust Error Handling: Provides clear feedback for invalid commands or incorrect arguments.
+A fully-functional command terminal built in Python for the **CodeMate Hackathon**, replicating real system terminal behavior while introducing modern enhancements like AI-powered command translation, smart auto-completion, and persistent command history.
 
-Responsive CLI: A clean and interactive command-line interface.
+---
 
-Optional Enhancements Implemented
-🚀 AI-Powered Queries: Use the ai command to execute tasks using natural language (e.g., ai create a new folder called project_files).
+## 🚀 Features
 
-🧠 Smart Auto-Completion:
+### ✅ Mandatory Requirements
 
-Press Tab to complete standard commands.
+- **Core Commands**: Supports `ls`, `cd`, `pwd`, `mkdir`, `rm`, `touch`, and `mv`
+- **System Monitoring**: `monitor` command displays real-time CPU and memory usage
+- **Robust Error Handling**: Clear feedback for invalid commands or arguments
+- **Responsive CLI**: Clean and interactive command-line interface
 
-Type ai  and press Tab for contextual, word-by-word suggestions for natural language commands.
+### 🌟 Optional Enhancements
 
-Automatically suggests file and folder paths when needed.
+| Feature | Description |
+|--------|-------------|
+| 🧠 **AI-Powered Queries** | Use `ai` to execute tasks via natural language (e.g., `ai create a new folder called project_files`) |
+| 🔍 **Smart Auto-Completion** | Press `Tab` to complete commands; contextual suggestions for `ai` queries |
+| 📜 **Command History** | Navigate with arrow keys; history persists across sessions |
+| 🔗 **Command Chaining** | Use `&&` to execute multiple commands (e.g., `pwd && ls`) |
+| 🔐 **Secure API Key Handling** | `.env` file securely manages Gemini API key |
 
-📜 Command History: Use the up and down arrow keys to navigate through your command history, which persists between sessions.
+---
 
-🔗 Command Chaining: Execute multiple commands in sequence using && (e.g., pwd && ls).
+## ⚙️ Setup & Installation
 
-🔐 Secure API Key Handling: Uses a .env file to securely manage the Gemini API key, keeping it out of the source code.
+### 1. Clone the Repository
 
-Setup and Installation
-Clone the Repository:
-
+```bash
 git clone <your-repo-link>
 cd <your-repo-folder>
+```
 
-Install Dependencies:
-Make sure you have Python 3 installed. Then, run the following command to install the required libraries:
+### 2. Install Dependencies
 
+Ensure Python 3 is installed, then run:
+
+```bash
 pip install -r requirements.txt
+```
 
-Set Up API Key:
+### 3. Set Up API Key
 
-Create a file named .env in the root of the project directory.
+Create a `.env` file in the root directory and add your Gemini API key:
 
-Add your Gemini API key to the file in the following format:
+```env
+GEMINI_API_KEY=your_api_key_here
+```
 
-GEMINI_API_KEY="YOUR_API_KEY_HERE"
+---
 
-Run the Terminal:
+## 📌 Notes
 
-python terminal.py
+- Use `Ctrl + Shift + M` to toggle tab key focus.
+- Alternatively, press `Esc` then `Tab` to move between interactive elements.
 
-How to Use
-Standard Commands: Type any of the supported commands (e.g., ls, cd ..).
+---
 
-AI Commands: Type ai followed by your request in plain English (e.g., ai tell me the system status).
-
-Exit: Type exit to close the terminal.
+Let me know if you'd like to add badges, visuals, or a usage demo GIF to make it even more engaging!
