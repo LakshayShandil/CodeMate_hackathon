@@ -1,48 +1,51 @@
-# 🚀 Python AI Command Terminal 🚀
+# 🖥️ CodeMate Hackathon – AI Command Terminal
 
-> A fully-functioning command terminal built in Python for the CodeMate Hackathon. This project replicates the behavior of a real system terminal while adding powerful, modern features like AI-powered command translation, advanced auto-completion, and command history.
-
----
-
-## ✨ Features
-
-This terminal meets all mandatory requirements and implements several key optional enhancements to create a powerful and user-friendly experience.
-
-| Mandatory Requirements Met | Optional Enhancements Implemented |
-| :------------------------- | :-------------------------------- |
-| ✅ Core System Commands    | 🤖 AI-Powered Queries             |
-| 🖥️ System Monitoring       | 🧠 Smart Auto-Completion          |
-| ⚠️ Robust Error Handling   | 📜 Persistent Command History     |
-| 🎨 Responsive CLI          | 🔗 Command Chaining (`&&`)        |
-|                            | 🔐 Secure API Key Handling        |
+> A fully-functional command terminal built in Python for the CodeMate Hackathon, replicating real system terminal behavior while introducing modern enhancements like AI-powered command translation, smart auto-completion, and persistent command history.
 
 ---
 
-## 🛠️ Setup and Installation
+## 🚀 Features
 
-Follow these steps to get the terminal running on your local machine.
+### ✅ Mandatory Requirements
 
-1.  **Clone the Repository:**
+-   **Core Commands:** Supports `ls`, `cd`, `pwd`, `mkdir`, `rm`, `touch`, and `mv`.
+-   **System Monitoring:** `monitor` command displays real-time CPU and memory usage.
+-   **Robust Error Handling:** Clear feedback for invalid commands or arguments.
+-   **Responsive CLI:** Clean and interactive command-line interface.
+
+### 🌟 Optional Enhancements
+
+| Feature                    | Description                                                                                             |
+| :------------------------- | :------------------------------------------------------------------------------------------------------ |
+| 🧠 **AI-Powered Queries** | Use `ai` to execute tasks via natural language (e.g., `ai create a new folder called project_files`).     |
+| 🔍 **Smart Auto-Completion** | Press `Tab` to complete commands; contextual suggestions for `ai` queries and file paths.               |
+| 📜 **Command History** | Navigate with arrow keys; history persists across sessions.                                             |
+| 🔗 **Command Chaining** | Use `&&` to execute multiple commands in sequence (e.g., `pwd && ls`).                                  |
+| 🔐 **Secure API Key Handling** | A `.env` file securely manages the Gemini API key, keeping secrets out of the source code.              |
+
+---
+
+## ⚙️ Setup & Installation
+
+1.  **Clone the Repository**
     ```bash
     git clone <your-repo-link>
     cd <your-repo-folder>
     ```
 
-2.  **Install Dependencies:**
-    Make sure you have Python 3 installed. Then, run the following command to install the required libraries from the `requirements.txt` file.
+2.  **Install Dependencies**
+    Ensure Python 3 is installed, then run:
     ```bash
     pip install -r requirements.txt
     ```
 
-3.  **Set Up Your API Key:**
-    - Create a file named `.env` in the root of the project directory.
-    - Add your Gemini API key to this file in the following format:
-      ```env
-      GEMINI_API_KEY="YOUR_API_KEY_HERE"
-      ```
+3.  **Set Up API Key**
+    Create a `.env` file in the root directory and add your Gemini API key:
+    ```env
+    GEMINI_API_KEY="YOUR_API_KEY_HERE"
+    ```
 
-4.  **Run the Terminal:**
-    You're all set! Launch the terminal with this command:
+4.  **Run the Terminal**
     ```bash
     python terminal.py
     ```
@@ -54,3 +57,4 @@ Follow these steps to get the terminal running on your local machine.
 -   **Standard Commands:** Type any of the supported commands (e.g., `ls`, `cd ..`, `monitor`).
 -   **AI Commands:** Type `ai` followed by your request in plain English (e.g., `ai create a file named report.txt`).
 -   **Exit:** Type `exit` to close the terminal.
+-   **Note on Tab Key:** In some terminals, you may need to press `Esc` then `Tab` to trigger auto-completion.
