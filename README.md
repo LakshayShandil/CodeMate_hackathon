@@ -1,7 +1,3 @@
-Absolutely! Here's a polished and visually structured version of your README file that enhances clarity, professionalism, and readability:
-
----
-
 # 🖥️ CodeMate Hackathon – AI Command Terminal
 
 A fully-functional command terminal built in Python for the **CodeMate Hackathon**, replicating real system terminal behavior while introducing modern enhancements like AI-powered command translation, smart auto-completion, and persistent command history.
